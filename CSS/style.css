@@ -1,0 +1,145 @@
+/* =================================
+  Base Element Styles
+==================================== */
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #384047;
+  text-decoration: none;
+ 
+  }
+  
+div {
+  width: 50%;
+  margin: auto;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+
+/* =================================
+  Base Layout Styles - applies to everything
+==================================== */
+
+.main-header a { 
+  text-decoration: none; /* remove underline from "a href" in header */
+  color: #384047;
+}
+/* Dropdown button on hover & focus */
+.header-link:hover, .header-link:focus {
+    background-color: #0099ff;
+}
+.logo { /* let the REALEATHER logo img resize to browser */
+	max-width: 150%;
+    height: auto;
+}
+
+.main-image { /* let the main-image on index.html resize to browser */
+	width: auto;
+    height: auto;
+	
+	 max-width: 100%;
+}
+
+/* =================================
+  Media Queries - applies to specific size devices
+==================================== */
+@media (min-width: 769px) {
+
+  .main-header {
+	  /*position: fixed;*/
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+	color: #384047;
+	height: 25px;
+  }
+
+  .main-footer {
+		/*position: not fixed;*/
+    background: #000099;
+    width: 100%;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+	color: white;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+	display: flex;
+
+  }
+
+ .main-image {
+	 margin-top: 50px;
+	
+ }
+
+  .indexText {
+    margin-top: 25px;
+	float: auto;
+  }
+
+/* ----- dropdown main-header ----- */
+  /* Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+	float: right;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #0099ff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
