@@ -1,4 +1,4 @@
-# CodeLouivilleProject
+# CodeLouisvilleProject
 Code Louisville Project
 Testing the branch readme-edits
 <br>
